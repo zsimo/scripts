@@ -8,6 +8,29 @@
 
 <?php
 
+
+print_r(mktime()+86400);
+print_r('<br><br><br>');
+
+session_start();
+if (!isset($_SESSION['gio'])) {
+	$_SESSION['gio'] = 0;
+}
+$_SESSION['gio']++;
+// increment a session counter
+
+$_SESSION['counter']++;
+
+print_r(session_id());
+session_destroy();
+
+
+
+
+// print value
+
+echo "You have viewed this page " . $_SESSION['gio'] . " times";
+
 /* if form has not yet been submitted, display input box */
 
 if (!isset($_POST['file'])) {
