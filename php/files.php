@@ -12,7 +12,7 @@ $fh = fopen($file, 'r') or die('Could not open file!');
 $data = fread($fh, filesize($file)) or die('Could not read file!');
 // close file
 fclose($fh);
-// print file contents
+// print file contents**
 echo $data;
 
 
