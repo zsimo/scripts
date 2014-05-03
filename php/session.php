@@ -21,7 +21,8 @@ echo "You have viewed this page " . $_SESSION['counter'] . " times";
 
 
 
-
+$bodyRequest = "var1=data passed via body request a mano";
+print_r(urlencode($bodyRequest));
 
 
 
