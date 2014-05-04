@@ -21,13 +21,6 @@ if (!is_resource($socket)) {
 else {
 
 
-	  $post_vars=array("user"=>"Alì Baba e i 40 ladroni","pass"=>"apriti sesamo","var1"=>"apriti sesamo") ;
-	  $req_body= "";
-	  foreach ($post_vars as $key=>$val) {
-		$req_body .= "&".$key."=".rawurlencode(htmlentities($val)) ;
-	  }
-	  // user=Al%EC%20Baba%20e%20i%2040%20ladroni&pass=apriti%20sesamo&send=Invia
-
   	  $headers="POST ".$target." ".$protocol.$br ;
 	  $headers.="Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*".$br;
 	  $headers.="Accept-Encoding: gzip, deflate".$br ;
