@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>client</title>
+		<meta name="author" content="simo" />
+		<!-- Date: 2014-05-05 -->
+	</head>
+	<body>
+		websocket client!
+		<div id="log"></div>
+
+    Enter Message <input id="msg" type="textbox" onkeypress="onkey(event)"/>
+
+    <button id="send">Send</button>
+
+	</body>
+
+
+
+
+
+	<script type="text/javascript">
+		console.log("ok");
+
+    //Open a WebSocket connection.
+    var wsUri = "ws://localhost:8080/simonesacchi.com/scripts/php/websocket/myserver.php";
+    websocket = new WebSocket(wsUri);
+//
+    // //Connected to server
+    websocket.onopen = function(ev) {
+        console.log('Connected to server ');
+    }
+//
+    // //Connection close
+    websocket.onclose = function(ev) {
+        console.log('Disconnected');
+    };
+//
+    // //Message Receved
+    websocket.onmessage = function(ev) {
+        console.log('Message '+ev.data);
+    };
+//
+    // //Error
+    websocket.onerror = function(ev) {
+        console.log('Error '+ev.data);
+    };
+
+	document.getElementById("send").onclick = function () {
+		websocket.send("prova message");
+	};
+     //Send a Message
+    // $('#send').click(function(){
+        // var mymessage = 'This is a test message';
+        // websocket.send(mymessage);
+    // });
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+</html>
+
