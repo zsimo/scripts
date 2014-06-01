@@ -121,6 +121,9 @@ $stringa = "pluto";
 $stringa{10} = "e";
 print_r($stringa);
 
+print_r("=====================\n");
+// (question mark) operator
+print_r(false ? "pippo" : "pluto");
 
 
 
