@@ -7,7 +7,7 @@
 	// print_r(crypt("simone"));
 
 
-	$hashed_password = crypt('mypassword'); // let the salt be automatically generated
+	$hashed_password = crypt('mypasswor'); // let the salt be automatically generated
 /* You should pass the entire results of crypt() as the salt for comparing a
    password, to avoid problems when different hashing algorithms are used. (As
    it says above, standard DES-based password hashing uses a 2-character salt,
