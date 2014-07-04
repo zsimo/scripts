@@ -22,6 +22,37 @@ if (crypt('mypassword', $hashed_password) == $hashed_password) {
 	print_r($hashed_password);
 
 	// echo password_hash("mypassword", PASSWORD_BCRYPT);
+	
+	if (CRYPT_SHA256 == 1) {
+	    echo 'SHA-256:      ' . crypt('rasmuslerdorf', '$5$rounds=5000$usesomesillystringforsalt$') . "\n";
+	}
+	
+	if (CRYPT_SHA512 == 1) {
+	    echo 'SHA-512:      ' . crypt('rasmuslerdorf', '$6$rounds=5000$usesomesillystringforsalt$') . "\n";
+	}
+	
+	
+	require 'password.php';
+	$password = 'password';
+	
+//	$hash = password_hash($password, PASSWORD_BCRYPT);
+	$hash = '$2y$10$7mDqcCspgQCmZIHaTbkeE.1XHHi4JyWvje83irQ82sTZ6OO0/YoIa';
+	
+	print_r("\n");
+	print_r($hash);
+	print_r("\n");
+	print_r("\n");
+	
+	
+//	$password = 'pippo';
+	
+	if (password_verify($password, $hash)) {
+        print_r("valid");
+    } else {
+        print_r("not valid");
+    }
+	
+	print_r("\n");	
 
 
 ?>
