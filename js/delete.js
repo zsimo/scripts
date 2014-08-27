@@ -1,4 +1,6 @@
 // http://bonsaiden.github.io/JavaScript-Garden/#core.delete
+// node delete.js
+
 
 // variabile e funzioni globali non possono essere cancellate
 
