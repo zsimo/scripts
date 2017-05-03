@@ -2,9 +2,6 @@
     ```git
     git remote show [remote-name]
     ```
-    ```bash
+    ```git
     git remote show origin
     ```
-
-
-    ddd
