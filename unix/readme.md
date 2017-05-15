@@ -1,4 +1,4 @@
 - create .tar
-    ```bash
+    ```sh
     tar -cvf output.tar /dirname
     ```
