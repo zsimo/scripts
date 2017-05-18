@@ -8,4 +8,12 @@
     ```sh
     echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
     ```
+    
+    
+ - copy a folder and all it's content
+     ```sh
+     cp -r Code/website/ ./website
+     ```   
+    
+
 
