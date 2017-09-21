@@ -23,6 +23,11 @@
      ```sh
      ln -s /shared/sales/data/file.txt sales.data.txt
      ```  
-    
+   
+   
+  - show porcess list filter by a given word
+    ```sh
+    ps -aux | grep node
+    ```   
 
 
