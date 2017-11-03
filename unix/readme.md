@@ -1,6 +1,9 @@
-- create .tar
+- .tar
     ```sh
+    // create
     tar -cvf output.tar /dirname
+    // Extract
+    tar -xvf output.tar [/dirname]
     ```
 
 
