@@ -5,3 +5,8 @@
     ```git
     git remote show origin
     ```
+
+- Create a new branch and switch into it
+    ```git
+    git checkout -b featue/new_branch
+    ```
