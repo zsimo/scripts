@@ -8,5 +8,5 @@
 
 - Create a new branch and switch into it
     ```git
-    git checkout -b featue/new_branch
+    git checkout -b feature/new_branch
     ```
