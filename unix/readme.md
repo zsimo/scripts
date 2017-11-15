@@ -28,9 +28,17 @@
      ```  
    
    
-  - show porcess list filter by a given word
+  - show process list filter by a given word
     ```sh
     ps -aux | grep node
-    ```   
+    ```
+
+  - search file by name
+    ```sh
+    find . -iname saml.php
+    ```
+
+
+
 
 
