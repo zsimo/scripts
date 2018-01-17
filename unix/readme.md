@@ -31,6 +31,14 @@
   - show process list filter by a given word
     ```sh
     ps -aux | grep node
+    kill 123456 -9
+    ```
+  - get process list showing in a tree
+    ```sh
+    htop
+    # F4 to filter
+    # key up / down to select the root process
+    # F9 to kill
     ```
 
   - search file by name
