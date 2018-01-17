@@ -31,7 +31,7 @@
   - show process list filter by a given word
     ```sh
     ps -aux | grep node
-    kill 123456 -9
+    kill 123456 -9 #-9 to force
     ```
   - get process list showing in a tree
     ```sh
