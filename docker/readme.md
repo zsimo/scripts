@@ -1,4 +1,4 @@
-- build via Powershell
+- build a image via Powershell
     ```sh
     Get-Content Dockerfile | docker build -t simone_centos:1 -
     ```
