@@ -10,3 +10,8 @@
     ```git
     git checkout -b feature/new_branch
     ```
+
+- Delete a local branch
+    ```git
+    git branch -d the_local_branch
+    ```
