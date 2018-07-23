@@ -15,3 +15,9 @@
     ```git
     git branch -d the_local_branch
     ```
+
+- chekout in a new branch
+    ```git
+    git fetch
+    git checkout new_branch
+    ```
