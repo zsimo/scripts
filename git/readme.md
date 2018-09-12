@@ -16,8 +16,11 @@
     git branch -d the_local_branch
     ```
 
-- chekout in a new branch
+- checkout in a new branch
     ```git
     git fetch
-    git checkout new_branch
+    git checkout --track origin/new_branch
+    // to fix previous track error
+    git branch new_branch -u origin/new_branch
+    
     ```
