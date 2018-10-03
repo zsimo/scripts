@@ -13,3 +13,10 @@
       #xlarge
     }
     ```
+- Font sizes
+    ```txt
+    - 120, 96, 72, and 48 headlines
+    - 36 and 24 subheads
+    - 12, 11, 10, and 9 point text
+    - 8 and 6 point footnotes and other less important information
+    ```
