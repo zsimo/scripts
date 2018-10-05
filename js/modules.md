@@ -1,10 +1,6 @@
+##### see [Axel Rauschmayer](http://2ality.com/2014/09/es6-modules-final.html) and [Nicolás Bevacqua](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system) and also [webpack](https://webpack.js.org/concepts/modules/)
+
 ### Export
-##### see [Axel Rauschmayer](http://2ality.com/2014/09/es6-modules-final.html) and [Nicolás Bevacqua](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
-##### see also [webpack](https://webpack.js.org/concepts/modules/)
- 
- 
-
-
 
 - CommonJS
     ```js
