@@ -20,3 +20,32 @@
     - 12, 11, 10, and 9 point text
     - 8 and 6 point footnotes and other less important information
     ```
+    
+- general sibling combinator [see](https://www.youtube.com/watch?v=-_QcUmyLdDw)
+    ```css
+    input[type=checkbox]:checked ~ .selector {
+      background: red
+    }
+    ```
+  
+ - moltiplicare le classi per aumentare la specificità (al posto di !important)
+     ```css
+       .hidden.hidden {
+           display: block;
+       }
+     ```
+     
+ - moltiplicare le classi per aumentare la specificità (al posto di !important)
+     ```css
+       .hidden.hidden {
+           display: block;
+       }
+     ```
+     
+- [currentColor](https://www.quirksmode.org/css/color/currentcolor.html)
+   ```css
+     b {
+      border-color: currentColor;
+     }
+   ```
+ 
