@@ -22,5 +22,8 @@
     git checkout --track origin/new_branch
     // to fix previous track error
     git branch new_branch -u origin/new_branch
-    
+    ```
+- add remote
+    ```git
+    git remote add origin https://<username>@bitbucket.org/<username>/<repo_name>.git
     ```
