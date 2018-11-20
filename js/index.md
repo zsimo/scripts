@@ -34,10 +34,16 @@ xhrRequest.send();
 var timeOutID;
 var delay = 300;
 
-clearTimeout(timeOutID);
 
-timeOutID = setTimeout(function () {
-    // action here
-}, delay);
+function action () {
+    clearTimeout(timeOutID);    
+    timeOutID = setTimeout(function () {
+        // action here
+    }, delay);
+}
+
+action();
+action();
+action();
 
 ```
