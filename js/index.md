@@ -34,11 +34,10 @@ xhrRequest.send();
 var timeOutID;
 var delay = 300;
 
-
 function action () {
     clearTimeout(timeOutID);    
     timeOutID = setTimeout(function () {
-        // action here
+        // operation to be throttled here
     }, delay);
 }
 
