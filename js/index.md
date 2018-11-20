@@ -26,3 +26,19 @@ xhrRequest.open('GET', '../bundle.js', true);
 // fire!
 xhrRequest.send();
 ```
+
+
+#### Throttle
+
+```js
+var timeOutID;
+var delay = 300;
+
+clearTimeout(timeOutID);
+
+timeOutID = setTimeout(function () {
+    // action here
+}, delay);
+
+
+```
