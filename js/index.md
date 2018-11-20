@@ -40,5 +40,4 @@ timeOutID = setTimeout(function () {
     // action here
 }, delay);
 
-
 ```
