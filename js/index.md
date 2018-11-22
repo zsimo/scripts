@@ -46,3 +46,11 @@ action();
 action();
 
 ```
+
+#### Check if the current scope if the global one
+
+```js
+if (this === window) {
+    // global scope
+}
+```
