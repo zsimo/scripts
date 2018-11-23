@@ -2,15 +2,15 @@
 ```js
 // obj.js file
 
-function constructor () {
+function creator () {
     this.count = 0;   
 }
 
-constructor.prototype.increment = function () {
+creator.prototype.increment = function () {
   this.count ++;
 };
 
-module.exports = constructor;
+module.exports = creator;
 
 ```
 ```js

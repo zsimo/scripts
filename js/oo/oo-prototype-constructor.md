@@ -8,7 +8,7 @@ var sharedFunctions = {
     }
 };
 
-function constructor () {
+function creator () {
     /**
      * Qualsiasi parametro si passi, Object.create ritorna sempre un oggetto vuoto.
      */
@@ -19,7 +19,7 @@ function constructor () {
     return newObj;
 }
 
-module.exports = constructor;
+module.exports = creator;
 
 ```
 ```js
