@@ -25,8 +25,10 @@ module.exports = constructor;
 ```js
 // index.js file
 
-var obj1 = require("./obj")();
-var obj2 = require("./obj")();
+var Obj = require("./obj");
+
+var obj1 = Obj();
+var obj2 = Obj();
 
 obj1.increment();
 
