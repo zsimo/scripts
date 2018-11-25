@@ -23,7 +23,7 @@ obj.m(); 2
 ```
 
 
-#### this inside a function if case of the left side of the dot notation is empty: undefined in strict mode, otherwise window
+#### this inside a function in case of the left side of the dot notation is empty: undefined in strict mode, otherwise window
 ```js
 "use strict";
 
