@@ -35,13 +35,6 @@
        }
      ```
      
- - moltiplicare le classi per aumentare la specificità (al posto di !important)
-     ```css
-       .hidden.hidden {
-           display: block;
-       }
-     ```
-     
 - [currentColor](https://www.quirksmode.org/css/color/currentcolor.html)
    ```css
      b {
