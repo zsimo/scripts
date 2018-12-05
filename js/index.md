@@ -55,11 +55,8 @@ function bottomVisible() {
 }
 
 window.addEventListener('scroll', function () {
-  console.log(this.bottomVisible());
-  
   if (bottomVisible()) {
         // append something to the page
   }
-
 });
 ```
