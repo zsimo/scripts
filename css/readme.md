@@ -1,4 +1,4 @@
-- Media breackpoints
+- Media breakpoints
     ```css
     @media screen and (min-width: 24.15em) {
       #small
