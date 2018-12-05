@@ -45,7 +45,6 @@ action();
 ```
 
 #### determine the end of the page (to implement infinite scroll)
-
 ```js
 function bottomVisible() {
   var scrollY = window.scrollY;
