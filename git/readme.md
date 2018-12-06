@@ -27,3 +27,10 @@
     ```git
     git remote add origin https://<username>@bitbucket.org/<username>/<repo_name>.git
     ```
+
+- tell Git to convert CRLF to LF on commit
+    ```git
+    git config --global core.autocrlf input
+    ```
+
+
