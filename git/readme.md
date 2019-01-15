@@ -27,6 +27,10 @@
     ```git
     git remote add origin https://<username>@bitbucket.org/<username>/<repo_name>.git
     ```
+- change remote
+    ```git
+    git remote set-url origin https://<username>@bitbucket.org/<username>/<repo_name>.git
+    ```
 
 - tell Git to convert CRLF to LF on commit
     ```git
