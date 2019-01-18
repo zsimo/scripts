@@ -13,3 +13,13 @@ var [ , , ...args ] = process.argv;
 console.log(args[0]);   // "ciao"
 ```
 
+
+#### show how many cpus
+```js
+node -p "os.cpus()"
+```
+
+#### find a module without execute it
+```js
+require.resolve("my-module");
+```
