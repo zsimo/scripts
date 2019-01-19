@@ -13,7 +13,6 @@ var [ , , ...args ] = process.argv;
 console.log(args[0]);   // "ciao"
 ```
 
-
 #### show how many cpus
 ```js
 node -p "os.cpus()"
@@ -41,5 +40,10 @@ if (require.main === module) {
     // being required by other files
     module.exports = print;
 }
+```
+
+#### show garbage collector activity
+```js
+node --trace_gc ./index.js
 ```
 
