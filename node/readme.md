@@ -19,7 +19,27 @@ console.log(args[0]);   // "ciao"
 node -p "os.cpus()"
 ```
 
-#### find a module without execute it
-```js
-require.resolve("my-module");
+#### write a module that can be used in the command line (run as script) and can be required
+```sh
+node ./file.js ciao 2
 ```
+```js
+var file = require("./file");
+file("ciao", 2);
+```
+```js
+// file.js
+
+function print (par1, par2) {
+    console.log(par1, par2);
+}
+
+if (require.main === module) {
+    // run as script
+    print(process.argv[2], process.argv[3]);
+} else {
+    // being required by other files
+    module.exports = print;
+}
+```
+
