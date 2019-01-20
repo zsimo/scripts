@@ -47,3 +47,12 @@ if (require.main === module) {
 node --trace_gc ./index.js
 ```
 
+#### show garbage collector activity
+```js
+node --trace_gc ./index.js
+```
+
+#### debug using chrome
+```js
+node inspect ./index.js
+```
