@@ -60,3 +60,12 @@ window.addEventListener('scroll', function () {
   }
 });
 ```
+
+#### take all function parameters, except for the first 
+```js
+    function () {
+        var args = Array.prototype.slice.call(arguments, 1);
+        // do something with args...
+    }
+
+```
