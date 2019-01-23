@@ -65,6 +65,7 @@ window.addEventListener('scroll', function () {
 ```js
     function () {
         var args = Array.prototype.slice.call(arguments, 1);
+        // same as var args = [].slice.call(arguments, 1);
         // do something with args...
     }
 
