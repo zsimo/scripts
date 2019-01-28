@@ -36,5 +36,10 @@
     ```git
     git config --global core.autocrlf input
     ```
+    
+- show all files involved in a commit 
+    ```git
+    git diff-tree --no-commit-id --name-only -r dsjfifjdksjdfjdsk
+    ```
 
 
