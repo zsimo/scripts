@@ -41,5 +41,11 @@
     ```git
     git diff-tree --no-commit-id --name-only -r dsjfifjdksjdfjdsk
     ```
+    
+- by default, the git push command doesn’t transfer tags to remote servers
+    ```git
+    git push tags
+    git push origin master --tags
+    ```
 
 
