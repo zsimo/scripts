@@ -46,8 +46,18 @@ make a file executable
 ```sh
 chmod u+x file.js
 # and then run the js script
-./file
+./file.js
 ```
+
+pass an env variable
+```sh
+hello=ciao ./file.js
+hello=ciao node ./file.js
+```
+```js
+console.log(process.env.hello); // ciao
+```
+
 
 
 
