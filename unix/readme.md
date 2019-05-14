@@ -58,6 +58,11 @@ hello=ciao node ./file.js
 console.log(process.env.hello); // ciao
 ```
 
+show net info
+```sh
+netstat -lntup
+```
+
 
 
 
