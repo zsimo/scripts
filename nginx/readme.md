@@ -1,6 +1,6 @@
 #### edit configs
 ```bash
-sudo vim /etc/nginx/conf.d/nexusweb.nubilaria.com.conf
+sudo vim /etc/nginx/conf.d/site.com.conf
 ```
 
 #### start / stop
