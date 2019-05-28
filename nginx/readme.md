@@ -10,3 +10,8 @@ sudo service nginx stop
 # or
 sudo systemctl restart nginx
 ```
+
+#### test configs
+```bash
+sudo /usr/sbin/nginx -t
+```
