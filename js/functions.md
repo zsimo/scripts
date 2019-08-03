@@ -3,6 +3,7 @@
 lexical scope even when the function is
 executed outside that lexical scope
 
+Closure non chiude sopra un valore ma sopra mantiene l'accesso a una variabile, con tutte le sue future mutazioni
 #### function declaration
 ```js
 // "function" is the first word of the statement
