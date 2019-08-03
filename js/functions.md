@@ -1,3 +1,8 @@
+#### [Kyle Simpson](https://frontendmasters.com/courses/deep-javascript-v3/what-is-closure/) Closure definition:
+>Closure is when a function “remembers” its
+lexical scope even when the function is
+executed outside that lexical scope
+
 #### function declaration
 ```js
 // "function" is the first word of the statement
