@@ -101,7 +101,7 @@ A `this`-aware function can thus have a different context each time it's called,
     ```
    the `new` keyword does 4 things:
    1. create a new empty object
-   2. link that object to another object
+   2. link that object to another object (to it's own prototype)
    3. call functions with `this` set to the new object
    4. return `this`
    
