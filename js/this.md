@@ -82,7 +82,7 @@ A `this`-aware function can thus have a different context each time it's called,
     ```
 3. hard binding:
     ```js
-    // when th ask function will be executed, `this` is forced to be bound to
+    // when the ask function will be executed, `this` is forced to be bound to
     // the parameter of the `bind` function
     var a = {
         b: "b",
@@ -96,5 +96,35 @@ A `this`-aware function can thus have a different context each time it's called,
    
 4. new binding:
     ```js
-    // to be done
+    // execute a function implicitly creating a new empty object (the `this` one),
+    // using a new context
     ```
+   the `new` keyword does 4 things:
+   1. create a new empty object
+   2. link that object to another object
+   3. call functions with `this` set to the new object
+   4. return `this`
+   
+5. default binding:
+    ```js
+    // in not strict mode, the default binding is to global (window)
+    function ask(c) {
+      console.log(this.b, c);
+    }
+    ask("ciao");
+   
+    // in strict mode, this is by default `undefined`
+    // so, it throws a TypeError
+    function ask2(c) {
+      "use strict";
+      console.log(this.b, c);
+    }
+  
+    ask2("ciao");
+    ```
+   
+#### binding rule precedence:
+1. Is the function called by new? 
+2. Is the function called by call() or apply()? Note: bind() effectively uses apply()
+3. Is the function called on a context object?
+4. DEFAULT: global object (except strict mode)
