@@ -32,3 +32,13 @@ stateManager = {
 
 stateManager.fly();
 ```
+
+#### get values from form
+```js
+// on submit
+function onSUbmitCallback(event) {
+    event.preventDefault();
+    var name = event.target.name.value;
+
+}
+```
