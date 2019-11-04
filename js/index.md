@@ -71,6 +71,22 @@ window.addEventListener('scroll', function () {
 
 ```
 
+
+#### add event listener via querySelectorAll
+```js
+
+    document.querySelectorAll(".elements").forEach(addClickListener);
+    // or
+    // [].forEach.call(document.querySelectorAll(".elements"), addClickListener);
+
+    function onClick (event, value) {
+        console.log(event.target);
+    }
+    function addClickListener (element) {
+        element.addEventListener("click", onClick);
+    }
+```
+
 #### curry
 ```js
 // A curried function is a function that takes multiple arguments one at a time.
