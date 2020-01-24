@@ -48,4 +48,11 @@
     git push origin master --tags
     ```
 
+- change last commit message
+    ```git
+    git commit --amend -m "an updated commit message"
+    ```
+
+
+
 
