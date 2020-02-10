@@ -68,6 +68,11 @@ clear all queued emails
 postsuper -d ALL
 ```
 
+clear queued emails addressed to me@email.com
+```sh
+mailq | tail -n +2 | awk 'BEGIN { RS = "" } / me@email\.com$/ { print $1 }' | tr -d '*!' | postsuper -d -
+```
+
 
 
 
