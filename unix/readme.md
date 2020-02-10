@@ -63,6 +63,12 @@ show net info
 netstat -lntup
 ```
 
+clear all queued emails
+```sh
+postsuper -d ALL
+```
+
+
 
 
 
