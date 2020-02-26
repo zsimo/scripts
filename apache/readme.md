@@ -16,3 +16,9 @@ sudo systemctl restart nginx
 ```bash
 sudo apachectl -t
 ```
+
+
+#### proxy to node server on localhost 
+```bash
+ProxyPass /node http://localhost:5050
+```
