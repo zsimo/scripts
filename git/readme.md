@@ -41,6 +41,12 @@
     ```git
     git diff-tree --no-commit-id --name-only -r dsjfifjdksjdfjdsk
     ```
+   
+- add annotated tag
+    ```git
+    git tag -a v0.1 -m "demo version"
+    git show v0.1
+    ```
     
 - by default, the git push command doesn’t transfer tags to remote servers
     ```git
