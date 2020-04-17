@@ -47,9 +47,10 @@ if (require.main === module) {
 node --trace_gc ./index.js
 ```
 
-#### show garbage collector activity
+#### __dirname vs process.cwd()
 ```js
-node --trace_gc ./index.js
+__dirname // the directory name of the current module
+process.cwd() // the current working directory of the Node.js process
 ```
 
 #### debug using chrome
