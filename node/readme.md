@@ -57,3 +57,19 @@ process.cwd() // the current working directory of the Node.js process
 ```js
 node inspect ./index.js
 ```
+
+#### pass an env variable
+```sh
+hello=ciao ./file.js
+hello=ciao node ./file.js
+```
+```js
+console.log(process.env.hello); // ciao
+```
+
+#### make a file executable
+```sh
+chmod u+x file.js
+# and then run the js script
+./file.js
+```

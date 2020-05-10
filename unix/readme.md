@@ -6,7 +6,6 @@ tar -cvf output.tar /dirname
 tar -xvf output.tar [/dirname]
 ```
 
-
 pretty print json
 ```sh
 echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
@@ -15,8 +14,7 @@ copy a folder and all it's content
  ```sh
  cp -r Code/website/ ./website
  ```   
-     
-    
+      
 create a symbolic link
 ```sh
 ln -s {/path/to/file-name} {link-name}
@@ -42,21 +40,7 @@ search file by name
 ```sh
 find . -iname saml.php
 ```
-make a file executable
-```sh
-chmod u+x file.js
-# and then run the js script
-./file.js
-```
 
-pass an env variable
-```sh
-hello=ciao ./file.js
-hello=ciao node ./file.js
-```
-```js
-console.log(process.env.hello); // ciao
-```
 
 show net info
 ```sh
