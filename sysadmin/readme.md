@@ -13,7 +13,14 @@ usermod -aG sudo new_user
 ```sh
 sudo apt-get install nginx
 sudo service nginx start
-sudo less /etc/nginx/sites-available/default
 sudo vim /etc/nginx/sites-available/default
+ll /var/www/html/
+#assign the www dir to <current logged user> instead of root
+sudo chown -R $USER:$USER /var/www
 ```
 
+#### node
+```sh
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
