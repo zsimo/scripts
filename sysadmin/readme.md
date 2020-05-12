@@ -35,4 +35,5 @@ sudo apt-get install -y nodejs
 #### log
 ```sh
 ll /var/log/
+tail -f /var/log/auth.log
 ```
