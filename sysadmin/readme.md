@@ -8,6 +8,12 @@ sudo adduser new_user
 usermod -aG sudo new_user
 ```
 
+#### change the ownership of a directory to the current user
+```sh
+sudo chown -R $USER /var/log/forever
+```
+
+
 
 #### nginx
 ```sh
@@ -23,4 +29,10 @@ sudo chown -R $USER:$USER /var/www
 ```sh
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
+```
+
+
+#### log
+```sh
+ll /var/log/
 ```
