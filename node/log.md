@@ -5,7 +5,7 @@ node my_app.js > my_app_log.log 2> my_app_err.log
 ```
 
 
-#### log to file(s)
+#### log to file via script
 
 ```js
 'use strict';
