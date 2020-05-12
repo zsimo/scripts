@@ -10,3 +10,9 @@ sudo vim /etc/redis/redis.conf
 sudo systemctl restart redis.service
 ```
 
+#### install 
+```bash
+redis-cli
+```
+
+
