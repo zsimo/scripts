@@ -3,20 +3,20 @@
 
 
 #### add user
-```sh
+```bash
 sudo adduser new_user
 usermod -aG sudo new_user
 ```
 
 #### change the ownership of a directory to the current user
-```sh
+```bash
 sudo chown -R $USER /var/log/forever
 ```
 
 
 
 #### nginx
-```sh
+```bash
 sudo apt-get install nginx
 sudo service nginx start
 sudo vim /etc/nginx/sites-available/default
@@ -26,14 +26,14 @@ sudo chown -R $USER:$USER /var/www
 ```
 
 #### node
-```sh
+```bash
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
 
 #### log
-```sh
+```bash
 ll /var/log/
 tail -f /var/log/auth.log
 ```
