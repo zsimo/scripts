@@ -8,6 +8,7 @@ sudo apt install redis-server
 sudo vim /etc/redis/redis.conf
 # set supervised systemd
 sudo systemctl restart redis.service
+sudo systemctl status redis
 ```
 
 #### install 
@@ -15,4 +16,9 @@ sudo systemctl restart redis.service
 redis-cli
 ```
 
+
+#### usage
+```redis
+INCR cv/visitcounter
+```
 
