@@ -20,14 +20,14 @@ sudo /usr/sbin/nginx -t
 
 
 #### proxy pass to node
-```bash
+```nginx
 location / {
   proxy_pass http://127.0.0.1:3000/;
 }
 ```
 
 #### proxy pass to node api
-```bash
+```nginx
 location /api {
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -39,5 +39,26 @@ location /api {
 }
 ```
 
+#### permanent (301) redirect
+```nginx
+location /help {
+    return 301 https://developer.mozilla.org/en-US/;
+}
+```
+
+#### subdomain
+```nginx
+server {
+        listen 80;    
+listen [::]80; # IPV6 notation
+
+       server_name test.jemisthe.best;
+
+        location / {
+           proxy_pass http://localhost:3000;
+          }
+}
+
+```
 
 
