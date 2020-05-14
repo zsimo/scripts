@@ -22,6 +22,19 @@ sudo /usr/sbin/nginx -t
 #### proxy pass to node
 ```bash
 location / {
-  proxy_pass http://127.0.0.1:3001/;
+  proxy_pass http://127.0.0.1:3000/;
+}
+```
+
+#### proxy pass to node api
+```bash
+location /api {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-NginX-Proxy true;
+    rewrite ^/api/?(.*) /$1 break;
+    proxy_pass http://127.0.0.1:3000/;
+    proxy_redirect off;
 }
 ```
