@@ -14,7 +14,6 @@ sudo chown -R $USER /var/log/forever
 ```
 
 
-
 #### nginx
 ```bash
 sudo apt-get install nginx
@@ -36,4 +35,15 @@ sudo apt-get install -y nodejs
 ```bash
 ll /var/log/
 tail -f /var/log/auth.log
+```
+
+
+#### github / bitbucket ssh keys
+```bash
+cd /home/ubuntu/.ssh
+ssh-keygen
+cat id_rsa.pub
+# add key to github / bitbucket
+git remote -v
+git remote add origin git@bitbucket.org:zsimo/api.git
 ```

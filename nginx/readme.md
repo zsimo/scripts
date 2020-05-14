@@ -38,3 +38,6 @@ location /api {
     proxy_redirect off;
 }
 ```
+
+
+
