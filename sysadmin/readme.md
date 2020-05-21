@@ -34,7 +34,7 @@ sudo apt-get install -y nodejs
 #### log
 ```bash
 ll /var/log/
-tail -f /var/log/auth.log
+sudo tail -f /var/log/auth.log
 ```
 
 
@@ -47,3 +47,31 @@ cat id_rsa.pub
 git remote -v
 git remote add origin git@bitbucket.org:zsimo/api.git
 ```
+
+#### Install unattended upgrades
+```bash
+sudo apt install unattended-upgrades
+# View conf file
+cat /etc/apt/apt.conf.d/50unattended-upgrades
+```
+
+#### scan for open ports
+```bash
+sudo apt install nmap
+nmap YOUR_SERVER_IP_ADDRESS
+# services list associated to ports
+less /etc/services
+```
+
+#### ufw ()uncomplicated firewall)
+```bash
+sudo ufw enable
+ufw allow ssh
+sudo ufw status verbose
+
+ufw allow http
+ufw deny http
+ufw reject http
+```
+
+#### install 

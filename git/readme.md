@@ -46,6 +46,8 @@
     ```git
     git tag -a v0.1 -m "demo version"
     git show v0.1
+    # show all tags with messages
+    git tag -n
     ```
     
 - by default, the git push command doesn’t transfer tags to remote servers
