@@ -18,7 +18,23 @@ redis-cli
 
 
 #### usage
-```redis
+```bash
 INCR cv/visitcounter
+```
+
+#### directories
+```bash
+#logs
+/var/log/redis_*
+#config
+/etc/redis/redis.conf
+#executable
+/usr/local/bin/
+#data
+/var/lib/redis/
+#init scripts
+/etc/init.d/redis_*
+#PID file
+/var/run/redis_*
 ```
 
