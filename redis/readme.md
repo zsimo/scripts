@@ -36,5 +36,7 @@ INCR cv/visitcounter
 /etc/init.d/redis_*
 #PID file
 /var/run/redis_*
+#systemd config
+/etc/systemd/system/redis.service
 ```
 
