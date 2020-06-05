@@ -4,6 +4,11 @@ sudo vim /etc/nginx/conf.d/site.com.conf
 sudo vim /etc/nginx/sites-available/default
 ```
 
+#### www dir
+```bash
+cd /var/www/
+```
+
 #### start / stop
 ```bash
 sudo service nginx start
