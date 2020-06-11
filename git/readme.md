@@ -49,8 +49,15 @@
     # show all tags with messages
     git tag -n
     ```
+- remove annotated tag
+    ```git
+    # locally
+    git tag --delete tagname
+    # remote
+    git push --delete origin tagname
+    ```
     
-- by default, the git push command doesn’t transfer tags to remote servers
+- by default, the git push command does not transfer tags to remote servers
     ```git
     git push tags
     git push origin master --tags
