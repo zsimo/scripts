@@ -7,4 +7,9 @@ sudo vim /etc/sphinx/sphinx.conf
 ```bash
 sudo service searchd start
 sudo service searchd stop
+
+#or
+
+systemctl stop searchd
+systemctl start searchd
 ```
