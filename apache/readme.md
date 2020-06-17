@@ -8,8 +8,6 @@ sudo vim vi /etc/httpd/vhost.d/<site>.com.conf
 service httpd start
 service httpd stop
 service httpd restart
-# or
-sudo systemctl restart nginx
 ```
 
 #### test configs
