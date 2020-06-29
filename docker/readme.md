@@ -2,8 +2,7 @@
     ```sh
     Get-Content Dockerfile | docker build -t simone_centos:1 -
     ```
-
-
+    
 - create a container and make it interactive
     ```sh
     docker run -it --name centos7 centos bash

@@ -74,4 +74,19 @@ ufw deny http
 ufw reject http
 ```
 
-#### install 
+#### see os version
+```bash
+cat /etc/issue
+```
+
+#### see dependencies
+```bash
+ldd /bin/bash
+```
+
+#### show processes
+```bash
+ps aux
+```
+ 
+ 
