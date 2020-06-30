@@ -1,5 +1,6 @@
 #take a base container
-FROM node:12-stretch
+#FROM node:12-stretch
+FROM node:12-alpine
 
 # node container has a node user, along with the root one
 USER node
