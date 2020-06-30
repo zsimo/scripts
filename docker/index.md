@@ -39,5 +39,10 @@ list available images
 docker images
 ```  
 
+build a container using the dockerfile in the current directory
+```sh
+docker build --tag my-node-container .
+docker run my-node-container
+```  
     
    

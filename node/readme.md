@@ -73,3 +73,8 @@ chmod u+x file.js
 # and then run the js script
 ./file.js
 ```
+
+#### execute command without file
+```sh
+node -e "console.log(\"ciao\")"
+```
