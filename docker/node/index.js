@@ -1,15 +1,34 @@
-const http = require("http");
+"use strict";
+// more-or-less the example code from the hapi-pino repo
+const hapi = require("@hapi/hapi");
 
+async function start() {
+    const server = hapi.server({
+        host: "0.0.0.0",
+        port: process.env.PORT || 3000
+    });
 
-process.on('SIGINT', function() {
-  console.log("exit");
-    process.exit();
+    server.route({
+        method: "GET",
+        path: "/",
+        handler() {
+            return { success: true };
+        }
+    });
+
+    await server.register({
+        plugin: require("hapi-pino"),
+        options: {
+            prettyPrint: true
+        }
+    });
+
+    await server.start();
+
+    return server;
+}
+
+start().catch(err => {
+    console.log(err);
+    process.exit(1);
 });
-
-http
-  .createServer(function(request, response) {
-    console.log("request received");
-    response.end("omg hi", "utf-8");
-  })
-  .listen(3000);
-console.log("server started");
