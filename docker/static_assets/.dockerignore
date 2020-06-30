@@ -1,0 +1,4 @@
+node_modules/
+.git/
+#build static assets in a build container
+public/

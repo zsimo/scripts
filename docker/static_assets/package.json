@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "hapi-pino": "^8.0.1"
+  },
+  "scripts": {
+    "build": "mkdir public && echo '<!DOCTYPE html><body><p>ciao</p></body></html>' > public/index.html"
+  }
+}
