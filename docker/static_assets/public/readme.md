@@ -1,1 +1,0 @@
-not to get copied inside the container, to be produced in the build stage instead
