@@ -63,7 +63,7 @@ nmap YOUR_SERVER_IP_ADDRESS
 less /etc/services
 ```
 
-#### ufw ()uncomplicated firewall)
+#### ufw (uncomplicated firewall)
 ```bash
 sudo ufw enable
 ufw allow ssh
@@ -72,6 +72,11 @@ sudo ufw status verbose
 ufw allow http
 ufw deny http
 ufw reject http
+```
+```bash
+systemctl start firewalld
+systemctl stop firewalld
+systemctl disable firewalld
 ```
 
 #### see os version
