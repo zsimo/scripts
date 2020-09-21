@@ -56,7 +56,10 @@
     # remote
     git push --delete origin tagname
     ```
-    
+- clone a specific tag
+    ```
+    git clone <repo_url> --branch v1.1
+    ```
 - by default, the git push command does not transfer tags to remote servers
     ```git
     git push tags
