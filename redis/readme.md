@@ -2,18 +2,22 @@
 ## on ubuntu server
 
 
-#### install 
+#### install (ubuntu)
 ```bash
 sudo apt install redis-server
+```
+#### install (centos)
+```bash
+sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+sudo yum --enablerepo=remi install redis
+```
+
+#### manage
+```bash
 sudo vim /etc/redis/redis.conf
 # set supervised systemd
 sudo systemctl restart redis.service
 sudo systemctl status redis
-```
-
-#### install 
-```bash
-redis-cli
 ```
 
 
