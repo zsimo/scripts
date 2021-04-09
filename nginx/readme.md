@@ -27,7 +27,11 @@ sudo /usr/sbin/nginx -t
 #### proxy pass to node
 ```nginx
 location / {
-  proxy_pass http://127.0.0.1:3000/;
+    proxy_pass http://127.0.0.1:3000;
+}
+location /dashboard {
+    rewrite ^/dashboard/(.*)$ /$1 break;
+    proxy_pass http://127.0.0.1:3001;
 }
 ```
 
