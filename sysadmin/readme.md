@@ -78,6 +78,11 @@ systemctl start firewalld
 systemctl stop firewalld
 systemctl disable firewalld
 ```
+```bash
+# remove port
+sudo ufw status numbered
+sudo ufw delete <number>
+```
 
 #### see os version
 ```bash
