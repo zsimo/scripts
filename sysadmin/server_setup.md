@@ -1,13 +1,36 @@
 
 ## on ubuntu server
 
+#### assign static ip
+```bash
+sudo vim /etc/netplan/[file].yaml
+```
+```yaml
+network:
+    ethernets:
+        eth0:
+            dhcp4: true
+            optional: true
+    version: 2
+    wifis:
+        wlan0:
+            access-points:
+                newtworkname:
+                    password: 1234
+            dhcp4: false
+            optional: true
+            addresses: [192.168.1.111/24]
+            gateway4: 192.168.1.1
+            nameservers:
+             addresses: [8.8.8.8,8.8.4.4]
+```
+```bash
+sudo netplan --debug apply
+```
 
 #### update software
 ```bash
 sudo apt update
-```
-#### upgrade software
-```bash
 sudo apt upgrade
 ```
 
@@ -35,6 +58,7 @@ sudo apt-get install -y nodejs
 sudo add-apt-repository ppa:chris-lea/redis-server
 sudo apt-get update
 sudo apt-get install redis-server -y
+sudo systemctl enable redis-server.service
 # change config
 sudo vim /etc/redis/redis.conf
 # set:
