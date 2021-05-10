@@ -68,6 +68,25 @@ supervised systemd
 sudo systemctl restart redis
 # dump
 /var/lib/redis/dump.rdb
+# show logs
+tail -f /var/log/redis/redis-server.log
+```
+#### install redis-json [see](https://oss.redislabs.com/redisjson/)
+```bash
+cd /etc/redis
+git clone https://github.com/RedisJSON/RedisJSON.git
+cd RedisJSON
+make
+git submodule update --init --recursive
+sudo make setup
+
+#install rust
+curl https://sh.rustup.rs -sSf | sh
+sudo apt install cargo
+cargo build --release
+
+#assign the directory to the redis user
+sudo chown -R redis /etc/redis/RedisJSON/
 ```
 
 #### install unattended-upgrades
