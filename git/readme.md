@@ -62,7 +62,7 @@
     ```
 - by default, the git push command does not transfer tags to remote servers
     ```git
-    git push tags
+    git push --tags
     git push origin master --tags
     ```
 
