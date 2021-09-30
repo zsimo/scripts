@@ -25,7 +25,11 @@ visudo
 
 #### add user to a group
 ```bash
-usermod -aG username groupname
+usermod -aG groupname username
+```
+#### remove user from group
+```bash
+gpasswd --delete username groupname
 ```
 
 #### change the ownership of a directory to the root user
