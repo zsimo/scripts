@@ -10,7 +10,7 @@ tar -xvf output.tar [/dirname]
 ```bash
 echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
 ```
-#### copy a folder and all it's content
+#### copy a folder and all its content
  ```bash
  cp -r Code/website/ ./website
  ```   

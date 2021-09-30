@@ -8,9 +8,44 @@ sudo adduser new_user
 usermod -aG sudo new_user
 ```
 
+
+#### use the root user
+```bash
+sudo bash
+#or
+su root
+```
+#### manage sudo users 
+Sudoers allows particular users to run various commands as the root user, without needing the root password.
+```bash
+sudo bash
+cd
+visudo
+```
+
+#### add user to a group
+```bash
+usermod -aG username groupname
+```
+
+#### change the ownership of a directory to the root user
+```bash
+ls -alh
+sudo chown -R root /var/log/forever
+```
+
 #### change the ownership of a directory to the current user
 ```bash
+ls -alh
 sudo chown -R $USER /var/log/forever
+```
+
+#### change the group of a directory to the current user
+```bash
+#show the groups the username belongs to
+whoami
+groups username
+sudo chgrp username file.txt
 ```
 
 
