@@ -70,7 +70,10 @@
     ```git
     git commit --amend -m "an updated commit message"
     ```
-
+- revert to the previous commit
+    ```git
+    git reset --hard HEAD~1
+    ```
 
 
 
