@@ -11,6 +11,7 @@ kill 123456 -9
 #### show nginx logs
 ```bash
 sudo tail -f /var/log/nginx/error.log
+sudo tail -f /var/log/nginx/access.log
 ```
 
 #### config
@@ -18,11 +19,14 @@ sudo tail -f /var/log/nginx/error.log
 sudo vim /etc/php-fpm.d/www.conf
 ```
 
-
-
-#### config
+#### manage service
 ```bash
 sudo systemctl start php70-php-fpm.service
 sudo systemctl status php70-php-fpm.service
 ```
+#### check if php is running
+```bash
+ps aux | grep php
+```
+
 
