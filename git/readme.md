@@ -60,6 +60,10 @@
     ```
     git clone <repo_url> --branch v1.1
     ```
+- clone in the current folder
+    ```
+    git clone <repo_url> .
+    ```
 - by default, the git push command does not transfer tags to remote servers
     ```git
     git push --tags
