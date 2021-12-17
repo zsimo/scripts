@@ -39,6 +39,12 @@ sudo apt upgrade
 copy the public key in the ./ssh/authorized_keys file
 ```
 
+#### disable root login
+```bash
+vim /etc/ssh/sshd_config
+sudo service sshd restart
+```
+
 #### install nginx
 ```bash
 sudo apt install nginx
