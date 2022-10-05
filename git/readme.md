@@ -10,7 +10,10 @@
     ```git
     git checkout -b feature/new_branch
     ```
-
+- Create a new branch and switch into it from a previous commit
+    ```git
+    git checkout -b branch_name <commit-hash or HEAD~3>
+    ```
 - Delete a local branch
     ```git
     git branch -d the_local_branch
