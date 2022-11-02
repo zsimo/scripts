@@ -63,6 +63,10 @@ mailq | tail -n +2 | awk 'BEGIN { RS = "" } / me@email\.com$/ { print $1 }' | tr
 mkdir -p /home/me/code/app
 ```
 
+#### check if a service is installed
+```bash
+which git
+```
 
 
 
