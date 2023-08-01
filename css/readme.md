@@ -85,4 +85,13 @@
      vw Relative to 1% of the width of the viewport
      vh Relative to 1% of the height of the viewport*
    ```
- 
+
+- add border box sizing to the page right from the start
+   ```css
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+   ```
