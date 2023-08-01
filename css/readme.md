@@ -51,6 +51,18 @@
     small, .text_small {font-size: 0.8rem;}
 
     ```
+- Font definition (type scaled) [see](https://codepen.io/jen4web/pen/YzJVzBB), [see](https://typescale.com/)
+  ```css
+    --base-size: 1rem;
+    --scale: 1.25;
+    --h1: calc(var(--h2) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h5: calc(var(--h6) * var(--scale));
+    --h6: var(--base-size);
+
+  ```
 - Font sizes
     ```txt
     - 120, 96, 72, and 48 headlines
