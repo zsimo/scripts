@@ -137,5 +137,9 @@ ldd /bin/bash
 ```bash
 ps aux
 ```
- 
+
+#### show directories list by size
+```bash
+du --max-depth=1 -hx
+```
  
