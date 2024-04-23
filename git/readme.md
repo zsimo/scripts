@@ -93,6 +93,13 @@
     ```git
     git reset --hard HEAD~1
     ```
+- working with remote
+    ```git
+    #show remote
+    git remote -v
+    git remote remove origin
+     
+    ```
 
 
 
