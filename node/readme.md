@@ -78,3 +78,11 @@ chmod u+x file.js
 ```sh
 node -e "console.log(\"ciao\")"
 ```
+
+#### generate random string (e.g.: to be used as session id)
+```sh
+const crypto= require('crypto');
+return crypto.randomBytes(16).toString("hex");
+```
+
+
