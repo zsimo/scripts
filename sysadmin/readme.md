@@ -123,6 +123,8 @@ sudo ufw status numbered
 sudo ufw delete <number>
 ```
 
+#### firewall centos firewall-cmd
+
 #### see os version
 ```bash
 cat /etc/issue
