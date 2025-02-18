@@ -79,6 +79,10 @@
     ```
     git clone <repo_url> .
     ```
+  - specify an SSH key when cloning a git repository
+    ```
+    GIT_SSH_COMMAND="ssh -i ~/.ssh/<key>" git clone git@repo.git
+    ```
 - by default, the git push command does not transfer tags to remote servers
     ```git
     git push --tags
