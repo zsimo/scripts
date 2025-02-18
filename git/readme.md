@@ -102,8 +102,13 @@
     #show remote
     git remote -v
     git remote remove origin
-     
     ```
+- change from HTTPS to SSH format
+    ```git
+    git remote set-url origin git@github.com:YOUR-USERNAME/YOUR-REPOSITORY.git
+    ```
+
+
 
 
 
