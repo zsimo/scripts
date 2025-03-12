@@ -144,4 +144,8 @@ ps aux
 ```bash
 du --max-depth=1 -hx
 ```
+```bash
+lsblk
+```
+
  
