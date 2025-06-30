@@ -26,6 +26,11 @@ sudo systemctl status redis
 INCR cv/visitcounter
 ```
 
+#### delete al keys starting with a pattern
+``` redis
+EVAL "return redis.call('del', unpack(redis.call('keys', 'doc:index*')))" 0
+```
+
 #### directories
 ```bash
 #logs
