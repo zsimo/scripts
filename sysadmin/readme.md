@@ -148,4 +148,8 @@ du --max-depth=1 -hx
 lsblk
 ```
 
+#### search for a string in the current directory and all subdirectories
+```bash
+grep -r "not_found" ./
+```
  
