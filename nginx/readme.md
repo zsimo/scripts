@@ -76,5 +76,9 @@ sudo tail -f /var/log/nginx/error.log
 sudo tail -f /var/log/nginx/access.log
 ```
 
+#### search in the logs by substring [in a mac terminal, is required an absolute path]
+```bash
+sudo zgrep -E "substring" /var/log/nginx/*.gz
+```
 
 
