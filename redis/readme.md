@@ -49,3 +49,8 @@ EVAL "return redis.call('del', unpack(redis.call('keys', 'doc:index*')))" 0
 /etc/systemd/system/redis.service
 ```
 
+#### acl: give to the user01 the permission to use all commands on all keys starting with `myapp` and all channel starting with `myapp`
+```bash
+ACL SETUSER user01 ~myapp* &myapp* +@all
+```
+
