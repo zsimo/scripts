@@ -152,4 +152,10 @@ lsblk
 ```bash
 grep -r "not_found" ./
 ```
+
+
+#### list all files order by modification date desc
+```bash
+ls -ltr
+```
  
