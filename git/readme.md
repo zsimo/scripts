@@ -93,9 +93,13 @@
     ```git
     git commit --amend -m "an updated commit message"
     ```
-- revert to the previous commit
+- go back to the previous commit and remove everything after it
     ```git
     git reset --hard HEAD~1
+    ```
+- go back to a previous commit and remove everything after it
+    ```git
+    git reset --hard <commit-hash>
     ```
 - working with remote
     ```git
