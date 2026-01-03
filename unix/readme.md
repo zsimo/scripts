@@ -68,6 +68,11 @@ mkdir -p /home/me/code/app
 which git
 ```
 
+#### search for a string in the all the files in the current directory and all the subdirectories
+```bash
+grep -nr 'ciao' .
+```
+
 
 
 
