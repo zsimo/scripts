@@ -8,3 +8,9 @@ SHOW STATUS LIKE 'Threads_connected';
 sudo systemctl status mariadb
 ```
 
+#### configuration file
+```ssh
+/etc/my.cnf.d/server.cnf 
+```
+
+
