@@ -153,9 +153,18 @@ lsblk
 grep -r "not_found" ./
 ```
 
-
 #### list all files order by modification date desc
 ```bash
 ls -ltr
+```
+
+#### list the biggest files in a given
+```bash
+du -ah /path/to/directory | sort -rh | head -n 20
+```
+
+#### see filesystem usage where the directory is located
+```bash
+df -h /path/to/directory
 ```
  
