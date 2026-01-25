@@ -73,6 +73,12 @@ which git
 grep -nr 'ciao' .
 ```
 
+#### get system info
+```bash
+uname -a
+```
+
+
 
 
 
