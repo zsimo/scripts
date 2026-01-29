@@ -15,6 +15,8 @@ sudo service nginx start
 sudo service nginx stop
 sudo service nginx reload
 # or
+sudo systemctl daemon-reload 
+and
 sudo systemctl restart nginx
 ```
 
