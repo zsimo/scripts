@@ -167,4 +167,16 @@ du -ah /path/to/directory | sort -rh | head -n 20
 ```bash
 df -h /path/to/directory
 ```
+
+#### create file of a given size
+```bash
+sudo dd if=/dev/zero of=./10Gfile02 bs=1G count=10
+```
+
+#### show memory usage
+```bash
+free -h
+```
+
+
  
