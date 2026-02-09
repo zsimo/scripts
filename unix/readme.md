@@ -78,7 +78,10 @@ grep -nr 'ciao' .
 uname -a
 ```
 
-
+#### force the ssh connection 
+```bash
+while true; do echo -n .; sleep 30; done
+```
 
 
 
