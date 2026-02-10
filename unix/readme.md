@@ -57,6 +57,12 @@ postsuper -d ALL
 ```bash
 mailq | tail -n +2 | awk 'BEGIN { RS = "" } / me@email\.com$/ { print $1 }' | tr -d '*!' | postsuper -d -
 ```
+#### show 
+```bash
+sudo mailq
+```
+
+
 
 #### make dir if not exists add all necessary path
 ```bash
