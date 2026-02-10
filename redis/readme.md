@@ -51,6 +51,10 @@ EVAL "return redis.call('del', unpack(redis.call('keys', 'doc:index*')))" 0
 
 #### acl: give to the user01 the permission to use all commands on all keys starting with `myapp` and all channel starting with `myapp`
 ```bash
-ACL SETUSER user01 ~myapp* &myapp* +@all
+# Create new user with password
+ACL SETUSER app_user on >my_password ~app* &app* +@all
+
+# Persist the changes (important!)
+ACL SAVE
 ```
 
