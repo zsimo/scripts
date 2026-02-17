@@ -1,10 +1,17 @@
-#### .tar
+#### create a .tar
 ```bash
 # create
-tar -cvf output.tar /dirname
+tar -cvf output.tar ./dirname
 # Extract
 tar -xvf output.tar [/dirname]
 ```
+
+#### create a compressed .tar
+```bash
+# create
+tar -czvf output.tar.gz ./dirname
+```
+
 
 #### pretty print json
 ```bash
