@@ -11,6 +11,9 @@ tar -xvf output.tar [/dirname]
 # create
 tar -czvf output.tar.gz ./dirname
 ```
+# Extract
+tar -xvf output.tar [/dirname]
+```
 
 
 #### pretty print json
