@@ -100,6 +100,17 @@ while true; do echo -n .; sleep 30; done
 ```
 
 
+#### edit the crontab for the current user
+(No need to restart the cron service)
+```bash
+crontab -e
+```
+#### see all the active cron jobs
+```bash
+sudo tail -f /var/log/cron
+```
+
+
 
 
 
