@@ -88,6 +88,10 @@ which git
 ```bash
 grep -nr 'ciao' .
 ```
+#### search for a string in the a directory and all the subdirectories, on a given file name
+```bash
+grep -r "pippo" /path/to/folder --include="info.txt"
+```
 
 #### get system info
 ```bash
@@ -109,6 +113,12 @@ crontab -e
 ```bash
 sudo tail -f /var/log/cron
 ```
+
+#### change the ownership of a given directory
+```bash
+chown -R app:app /path/to/folder
+```
+
 
 
 
