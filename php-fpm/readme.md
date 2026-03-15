@@ -7,6 +7,10 @@ ps -aux | grep node
 kill 123456 -9
 ```
 
+#### show php-fpm logs
+```bash
+sudo tail -f /var/log/php-fpm/error.log
+```
 
 #### show nginx logs
 ```bash
@@ -23,6 +27,8 @@ sudo vim /etc/php-fpm.d/www.conf
 ```bash
 sudo systemctl start php70-php-fpm.service
 sudo systemctl status php70-php-fpm.service
+sudo systemctl restart php-fpm.service
+sudo systemctl status php-fpm.service
 ```
 #### check if php is running
 ```bash
