@@ -112,6 +112,10 @@
     git remote set-url origin git@github.com:YOUR-USERNAME/YOUR-REPOSITORY.git
     ```
 
+- ignore file permission changes (true in prod)
+    ```git
+    git config core.fileMode false
+    ```
 
 
 
