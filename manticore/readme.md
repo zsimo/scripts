@@ -1,6 +1,6 @@
 #### edit configs
 ```bash
-sudo vim /etc/sphinx/sphinx.conf
+sudo vim /etc/manticoresearch/manticore.conf 
 ```
 
 #### start / stop
