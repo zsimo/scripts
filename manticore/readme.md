@@ -7,6 +7,7 @@ sudo vim /etc/manticoresearch/manticore.conf
 ```bash
 sudo service searchd start
 sudo service searchd stop
+sudo service searchd status
 
 #or
 
