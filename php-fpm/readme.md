@@ -23,6 +23,12 @@ sudo tail -f /var/log/nginx/access.log
 sudo vim /etc/php-fpm.d/www.conf
 ```
 
+
+#### check the config
+```bash
+sudo php-fpm -t -y  /etc/php-fpm.d/www.conf
+```
+
 #### manage service
 ```bash
 sudo systemctl start php70-php-fpm.service
