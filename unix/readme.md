@@ -114,11 +114,6 @@ crontab -e
 sudo tail -f /var/log/cron
 ```
 
-#### change the ownership of a given directory
-```bash
-chown -R app:app /path/to/folder
-```
-
 
 
 
