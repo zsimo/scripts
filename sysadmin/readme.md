@@ -179,4 +179,9 @@ free -h
 ```
 
 
+#### remove all files and directories in the current directory
+```bash
+rm -rf ./*
+```
+
  
