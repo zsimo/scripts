@@ -178,6 +178,11 @@ sudo dd if=/dev/zero of=./10Gfile02 bs=1G count=10
 free -h
 ```
 
+#### show memory usage
+```bash
+sudo ncdu
+```
+
 
 #### remove all files and directories in the current directory
 ```bash
