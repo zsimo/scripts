@@ -3,7 +3,7 @@
 
 # --- Attivazione base ---
 server_id        = 1          # obbligatorio, unico nel cluster
-log_bin          = /var/log/mariadb/mariadb-bin [o il path che preferisci]
+log_bin          = /var/log/mariadb/mariadb-bin
 binlog_format    = ROW        # obbligatorio per Change Data Capture (CDC)
 binlog_row_image = MINIMAL       # Solo le colonne che identificano la riga (PK) + quelle effettivamente cambiate
 
