@@ -115,6 +115,17 @@ sudo tail -f /var/log/cron
 ```
 
 
+#### screen
+```bash
+# Start a named screen session
+screen -S paperclip
+# detach session
+Ctrl + A, then D
+# reattach
+screen -r 12345
+or
+screen -r my_session
+```
 
 
 

@@ -47,6 +47,12 @@
     git remote set-url origin https://<username>@bitbucket.org/<username>/<repo_name>.git
     ```
 
+- use a specific ssh key in a specific repo
+    ```git
+    git config core.sshCommand "ssh -i ~/.ssh/id_bitbucket_swift -o IdentitiesOnly=yes"
+    ```
+
+
 - tell Git to convert CRLF to LF on commit
     ```git
     git config --global core.autocrlf input
