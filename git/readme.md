@@ -51,7 +51,32 @@
     ```git
     git config core.sshCommand "ssh -i ~/.ssh/id_bitbucket_swift -o IdentitiesOnly=yes"
     ```
+- use a specific ssh key for all the repos globally
+    ```git
+    git config --global core.sshCommand "ssh -i ~/.ssh/id_bitbucket_swift -o IdentitiesOnly=yes"
+    ```
 
+- use a specific ssh key for all the repos globally
+    ```git
+    git config --global core.sshCommand "ssh -i ~/.ssh/id_bitbucket_swift -o IdentitiesOnly=yes"
+    ```
+
+- custom keys for host
+    ```
+    # GitHub
+    Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_github
+    IdentitiesOnly yes
+    
+    # Bitbucket
+    Host bitbucket.org
+    HostName bitbucket.org
+    User git
+    IdentityFile ~/.ssh/id_bitbucket
+    IdentitiesOnly yes
+    ```
 
 - tell Git to convert CRLF to LF on commit
     ```git
